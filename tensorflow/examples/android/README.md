@@ -76,5 +76,11 @@ errors may not be obvious if the app halts immediately, so if you installed
 with bazel and the app doesn't come up, then the easiest thing to do is try
 installing with adb.
 
+if you building it in ubuntu/linux 64 bit , encountered such a problem : "error while 
+loading shared libraries: libz.so.1: cannot open shared object file: No such file or dir".
+It the lack of bit ubuntu64 in the 32 part of the class library , you should install lib32nucurse5
+and lib32stdc++6 ,lib32zl
+sudo apt-get install lib32nucurse5 lib32stdc++6 lib32zl # ubuntu
+
 Once the app is installed it will be named "Tensorflow Demo" and have the orange
 Tensorflow logo as its icon.
